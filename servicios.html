@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Servicios Médicos — Diagnosticar Centro Médico</title>
+  <meta name="description" content="Especialidades médicas y estudios de diagnóstico por imágenes. Cardiología, ginecología, pediatría, resonancia magnética y más." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/avif" href="assets/images/logoCompleto.avif" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            primary: '#0F62FE',
+            secondary: '#8AB4F8',
+            success: '#12A150',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans text-slate-800 bg-white">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-100">
+    <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3" aria-label="Diagnosticar inicio">
+        <img src="assets/images/logoCompleto.avif" alt="Diagnosticar" class="h-9 w-auto" loading="eager" />
+        <span class="text-lg font-semibold">Diagnosticar</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="servicios.html" class="text-primary font-medium">Servicios</a>
+        <a href="sedes.html" class="hover:text-primary">Sedes</a>
+        <a href="turnos.html" class="hover:text-primary">Turnos</a>
+        <a href="resultados.html" class="hover:text-primary">Resultados</a>
+        <a href="contacto.html" class="hover:text-primary">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="py-16 bg-gradient-to-br from-primary/5 to-secondary/5">
+    <div class="mx-auto max-w-7xl px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Nuestros Servicios</h1>
+      <p class="text-xl text-slate-600 max-w-3xl mx-auto">
+        Ofrecemos atención médica integral con especialidades y estudios de diagnóstico por imágenes 
+        en nuestras sedes de Berazategui y Lomas de Zamora.
+      </p>
+    </div>
+  </section>
+
+  <!-- Categorías de servicios -->
+  <section class="py-12">
+    <div class="mx-auto max-w-7xl px-4">
+      <!-- Especialidades Médicas -->
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold text-slate-900 mb-2">Especialidades Médicas</h2>
+        <p class="text-slate-600 mb-8">Consultas con profesionales especializados</p>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Cardiología -->
+          <div class="bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition p-6">
+            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Cardiología</h3>
+            <p class="text-slate-600 text-sm mb-4">Evaluación cardiovascular, ECG, Holter y ergometría. Seguimiento de hipertensión y arritmias.</p>
+            <ul class="text-sm text-slate-500 space-y-1 mb-4">
+              <li>• Electrocardiograma (ECG)</li>
+              <li>• Holter 24hs</li>
+              <li>• Ergometría</li>
+              <li>• Ecocardiograma</li>
+            </ul>
+            <a href="servicios/cardiologia.html" class="text-primary font-medium text-sm">Ver más detalles →</a>
+          </div>
+
+          <!-- Ginecología -->
+          <div class="bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition p-6">
+            <div class="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Ginecología</h3>
+            <p class="text-slate-600 text-sm mb-4">Controles ginecológicos, PAP, colposcopía y seguimiento del embarazo.</p>
+            <ul class="text-sm text-slate-500 space-y-1 mb-4">
+              <li>• Control ginecológico</li>
+              <li>• Papanicolaou (PAP)</li>
+              <li>• Colposcopía</li>
+              <li>• Ecografía ginecológica</li>
+            </ul>
+            <a href="servicios/ginecologia.html" class="text-primary font-medium text-sm">Ver más detalles →</a>
+          </div>
+
+          <!-- Traumatología -->
+          <div class="bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition p-6">
+            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Traumatología</h3>
+            <p class="text-slate-600 text-sm mb-4">Evaluación de lesiones óseas y articulares. Radiografías y tratamiento.</p>
+            <ul class="text-sm text-slate-500 space-y-1 mb-4">
+              <li>• Consultas traumatológicas</li>
+              <li>• Radiografías</li>
+              <li>• Evaluación de fracturas</li>
+              <li>• Infiltraciones</li>
+            </ul>
+            <a href="servicios/traumatologia.html" class="text-primary font-medium text-sm">Ver más detalles →</a>
+          </div>
+
+          <!-- Pediatría -->
+          <div class="bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition p-6">
+            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1.586a1 1 0 01.707.293L12 11l.707-.707A1 1 0 0113.414 10H15M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Pediatría</h3>
+            <p class="text-slate-600 text-sm mb-4">Atención médica especializada para niños y adolescentes.</p>
+            <ul class="text-sm text-slate-500 space-y-1 mb-4">
+              <li>• Controles de niño sano</li>
+              <li>• Vacunación</li>
+              <li>• Consultas por enfermedad</li>
+              <li>• Certificados escolares</li>
+            </ul>
+            <a href="servicios/pediatria.html" class="text-primary font-medium text-sm">Ver más detalles →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Diagnóstico por Imágenes -->
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold text-slate-900 mb-2">Diagnóstico por Imágenes</h2>
+        <p class="text-slate-600 mb-8">Estudios de alta calidad con tecnología avanzada</p>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Resonancia Magnética -->
+          <div class="bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition p-6">
+            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Resonancia Magnética</h3>
+            <p class="text-slate-600 text-sm mb-4">Equipo de alto campo para estudios detallados del sistema nervioso y articulaciones.</p>
+            <ul class="text-sm text-slate-500 space-y-1 mb-4">
+              <li>• RM de cerebro y columna</li>
+              <li>• RM articular</li>
+              <li>• RM abdominal</li>
+              <li>• Con y sin contraste</li>
+            </ul>
+            <a href="servicios/resonancia.html" class="text-primary font-medium text-sm">Ver más detalles →</a>
+          </div>
+
+          <!-- Ecografía -->
+          <div class="bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition p-6">
+            <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Ecografía</h3>
+            <p class="text-slate-600 text-sm mb-4">Estudios ecográficos generales y doppler con equipos de última generación.</p>
+            <ul class="text-sm text-slate-500 space-y-1 mb-4">
+              <li>• Ecografía abdominal</li>
+              <li>• Ecografía ginecológica</li>
+              <li>• Ecografía obstétrica</li>
+              <li>• Doppler vascular</li>
+            </ul>
+            <a href="servicios/ecografia.html" class="text-primary font-medium text-sm">Ver más detalles →</a>
+          </div>
+
+          <!-- Mamografía -->
+          <div class="bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition p-6">
+            <div class="w-12 h-12 bg-rose-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Mamografía</h3>
+            <p class="text-slate-600 text-sm mb-4">Detección temprana de patología mamaria con tecnología digital.</p>
+            <ul class="text-sm text-slate-500 space-y-1 mb-4">
+              <li>• Mamografía digital</li>
+              <li>• Control anual</li>
+              <li>• Estudios de seguimiento</li>
+              <li>• Informes especializados</li>
+            </ul>
+            <a href="servicios/mamografia.html" class="text-primary font-medium text-sm">Ver más detalles →</a>
+          </div>
+
+          <!-- Gastroenterología -->
+          <div class="bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition p-6">
+            <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Gastroenterología</h3>
+            <p class="text-slate-600 text-sm mb-4">Diagnóstico y tratamiento de patologías digestivas.</p>
+            <ul class="text-sm text-slate-500 space-y-1 mb-4">
+              <li>• Consultas especializadas</li>
+              <li>• Ecografía abdominal</li>
+              <li>• Estudios funcionales</li>
+              <li>• Seguimiento de patologías</li>
+            </ul>
+            <a href="servicios/gastroenterologia.html" class="text-primary font-medium text-sm">Ver más detalles →</a>
+          </div>
+
+          <!-- Apto Físico -->
+          <div class="bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition p-6">
+            <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Apto Físico</h3>
+            <p class="text-slate-600 text-sm mb-4">Certificados médicos para actividades deportivas y laborales.</p>
+            <ul class="text-sm text-slate-500 space-y-1 mb-4">
+              <li>• Apto deportivo</li>
+              <li>• Apto laboral</li>
+              <li>• Certificados escolares</li>
+              <li>• Evaluación clínica completa</li>
+            </ul>
+            <a href="servicios/apto-fisico.html" class="text-primary font-medium text-sm">Ver más detalles →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Servicios Sociales -->
+      <div class="mb-16">
+        <h2 class="text-3xl font-bold text-slate-900 mb-2">Otros Servicios</h2>
+        <p class="text-slate-600 mb-8">Servicios complementarios para tu bienestar</p>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-100">
+            <h3 class="text-xl font-semibold mb-2 text-blue-900">Guardia Médica</h3>
+            <p class="text-blue-800 mb-4">Atención médica de urgencias las 24 horas en nuestras sedes.</p>
+            <p class="text-sm text-blue-700">Lun-Vie: 7:00-20:00 | Dom: 16:00-20:00</p>
+          </div>
+
+          <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-6 border border-green-100">
+            <h3 class="text-xl font-semibold mb-2 text-green-900">WhatsApp Médico</h3>
+            <p class="text-green-800 mb-4">Consultas rápidas y orientación médica por WhatsApp.</p>
+            <a href="https://wa.me/5491100000000" class="text-success font-medium">Consultar ahora →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="text-center bg-primary/5 rounded-2xl p-8">
+        <h3 class="text-2xl font-semibold mb-4">¿Necesitas más información?</h3>
+        <p class="text-slate-600 mb-6">Nuestro equipo está listo para ayudarte con cualquier consulta sobre nuestros servicios.</p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="turnos.html" class="bg-primary text-white hover:bg-primary/90 px-6 py-3 rounded-xl font-semibold transition">
+            Sacar turno
+          </a>
+          <a href="https://wa.me/5491100000000" class="border border-primary text-primary hover:bg-primary/5 px-6 py-3 rounded-xl font-semibold transition">
+            Consultar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t bg-slate-50 mt-16">
+    <div class="mx-auto max-w-7xl px-4 py-10 grid md:grid-cols-4 gap-8">
+      <div>
+        <img src="assets/images/logoCompleto.avif" alt="Diagnosticar" class="h-9 w-auto mb-3" loading="lazy" />
+        <p class="text-sm text-slate-600">Centro médico integral. Especialidades, guardia y diagnóstico por imágenes.</p>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-3">Servicios</h3>
+        <ul class="space-y-2 text-sm text-slate-600">
+          <li><a class="hover:text-primary" href="servicios/cardiologia.html">Cardiología</a></li>
+          <li><a class="hover:text-primary" href="servicios/ginecologia.html">Ginecología</a></li>
+          <li><a class="hover:text-primary" href="servicios/resonancia.html">Resonancia</a></li>
+          <li><a class="hover:text-primary" href="servicios/ecografia.html">Ecografía</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-3">Contacto</h3>
+        <ul class="space-y-2 text-sm text-slate-600">
+          <li>Tel: <a class="text-primary" href="tel:+541100000000">+54 11 0000-0000</a></li>
+          <li>WhatsApp: <a class="text-primary" href="https://wa.me/5491100000000">+54 9 11 0000 0000</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-3">Accesos</h3>
+        <ul class="space-y-2 text-sm text-slate-600">
+          <li><a class="hover:text-primary" href="turnos.html">Turnos</a></li>
+          <li><a class="hover:text-primary" href="resultados.html">Resultados</a></li>
+          <li><a class="hover:text-primary" href="sedes.html">Sedes</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t">
+      <div class="mx-auto max-w-7xl px-4 py-6 text-xs text-slate-500 text-center">
+        <p>&copy; 2025 Diagnosticar. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resonancia Magnética — Diagnosticar Centro Médico</title>
+  <meta name="description" content="Resonancia magnética de alto campo. Estudios de cerebro, columna y articulaciones con tecnología avanzada." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/avif" href="../assets/images/logoCompleto.avif" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            primary: '#0F62FE',
+            secondary: '#8AB4F8',
+            success: '#12A150',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans text-slate-800 bg-white">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-100">
+    <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
+      <a href="../index.html" class="flex items-center gap-3" aria-label="Diagnosticar inicio">
+        <img src="../assets/images/logoCompleto.avif" alt="Diagnosticar" class="h-9 w-auto" loading="eager" />
+        <span class="text-lg font-semibold">Diagnosticar</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="../servicios.html" class="text-primary">Servicios</a>
+        <a href="../sedes.html" class="hover:text-primary">Sedes</a>
+        <a href="../turnos.html" class="hover:text-primary">Turnos</a>
+        <a href="../resultados.html" class="hover:text-primary">Resultados</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="bg-slate-50 py-3 border-b">
+    <div class="mx-auto max-w-7xl px-4">
+      <nav class="flex items-center space-x-2 text-sm text-slate-600">
+        <a href="../index.html" class="hover:text-primary">Inicio</a>
+        <span>•</span>
+        <a href="../servicios.html" class="hover:text-primary">Servicios</a>
+        <span>•</span>
+        <span class="text-slate-900 font-medium">Resonancia Magnética</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="py-12 bg-gradient-to-br from-purple-50 to-indigo-50">
+    <div class="mx-auto max-w-4xl px-4 text-center">
+      <div class="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mx-auto mb-6">
+        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+        </svg>
+      </div>
+      <h1 class="text-4xl font-bold text-slate-900 mb-4">Resonancia Magnética</h1>
+      <p class="text-xl text-slate-600">
+        Tecnología de alto campo para diagnósticos precisos y detallados
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="py-12">
+    <div class="mx-auto max-w-4xl px-4">
+      
+      <!-- Información general -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold mb-6">¿Qué es la Resonancia Magnética?</h2>
+        <div class="bg-white rounded-xl border border-slate-200 p-8">
+          <p class="text-slate-700 mb-4">
+            La Resonancia Magnética (RM) es un estudio de diagnóstico por imágenes que utiliza campos magnéticos 
+            y ondas de radio para crear imágenes detalladas del interior del cuerpo. Es especialmente útil para 
+            visualizar tejidos blandos, órganos internos, cerebro y sistema nervioso.
+          </p>
+          <div class="grid md:grid-cols-3 gap-6 mt-8">
+            <div class="text-center">
+              <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <h3 class="font-semibold text-green-900">Sin radiación</h3>
+              <p class="text-sm text-green-700">No utiliza rayos X ni radiación ionizante</p>
+            </div>
+            <div class="text-center">
+              <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                </svg>
+              </div>
+              <h3 class="font-semibold text-blue-900">Imágenes detalladas</h3>
+              <p class="text-sm text-blue-700">Alta resolución en múltiples planos</p>
+            </div>
+            <div class="text-center">
+              <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                </svg>
+              </div>
+              <h3 class="font-semibold text-purple-900">Diagnóstico preciso</h3>
+              <p class="text-sm text-purple-700">Ideal para detectar patologías tempranas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tipos de estudios -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold mb-6">Estudios de Resonancia Disponibles</h2>
+        <div class="space-y-6">
+          
+          <div class="bg-white rounded-xl border border-slate-200 p-6">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-lg font-semibold mb-2">RM de Cerebro</h3>
+                <p class="text-slate-600 text-sm mb-3">
+                  Evaluación del sistema nervioso central para detectar tumores, ACV, esclerosis múltiple y otras patologías neurológicas.
+                </p>
+                <div class="grid md:grid-cols-2 gap-4 text-sm">
+                  <div>
+                    <p class="font-medium text-slate-700">Duración:</p>
+                    <p class="text-slate-600">20-30 minutos</p>
+                  </div>
+                  <div>
+                    <p class="font-medium text-slate-700">Con/sin contraste:</p>
+                    <p class="text-slate-600">Según indicación médica</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl border border-slate-200 p-6">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-lg font-semibold mb-2">RM de Columna</h3>
+                <p class="text-slate-600 text-sm mb-3">
+                  Diagnóstico de hernias discales, estenosis, tumores y otras patologías de columna cervical, dorsal y lumbar.
+                </p>
+                <div class="grid md:grid-cols-2 gap-4 text-sm">
+                  <div>
+                    <p class="font-medium text-slate-700">Segmentos:</p>
+                    <p class="text-slate-600">Cervical, dorsal, lumbar</p>
+                  </div>
+                  <div>
+                    <p class="font-medium text-slate-700">Duración:</p>
+                    <p class="text-slate-600">25-35 minutos</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl border border-slate-200 p-6">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                </svg>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-lg font-semibold mb-2">RM Articular</h3>
+                <p class="text-slate-600 text-sm mb-3">
+                  Evaluación detallada de rodilla, hombro, tobillo y otras articulaciones. Ideal para lesiones deportivas y traumatológicas.
+                </p>
+                <div class="grid md:grid-cols-2 gap-4 text-sm">
+                  <div>
+                    <p class="font-medium text-slate-700">Articulaciones:</p>
+                    <p class="text-slate-600">Rodilla, hombro, tobillo, muñeca</p>
+                  </div>
+                  <div>
+                    <p class="font-medium text-slate-700">Aplicaciones:</p>
+                    <p class="text-slate-600">Lesiones deportivas, meniscos</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl border border-slate-200 p-6">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                </svg>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-lg font-semibold mb-2">RM Abdominal</h3>
+                <p class="text-slate-600 text-sm mb-3">
+                  Estudio de órganos abdominales: hígado, páncreas, riñones, vesícula biliar y estructuras pélvicas.
+                </p>
+                <div class="grid md:grid-cols-2 gap-4 text-sm">
+                  <div>
+                    <p class="font-medium text-slate-700">Preparación:</p>
+                    <p class="text-slate-600">Ayuno de 6 horas</p>
+                  </div>
+                  <div>
+                    <p class="font-medium text-slate-700">Duración:</p>
+                    <p class="text-slate-600">30-45 minutos</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Preparación -->
+      <div class="bg-amber-50 rounded-xl p-8 mb-12">
+        <h2 class="text-2xl font-bold text-amber-900 mb-6">Preparación para Resonancia Magnética</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="font-semibold text-amber-900 mb-4">Antes del estudio</h3>
+            <ul class="text-amber-800 text-sm space-y-2">
+              <li>✓ Traer orden médica y carnet de obra social</li>
+              <li>✓ Informar sobre marcapasos o implantes metálicos</li>
+              <li>✓ Quitar joyas, relojes y objetos metálicos</li>
+              <li>✓ Usar ropa cómoda sin cierres metálicos</li>
+              <li>✓ Si es abdominal: ayuno de 6 horas</li>
+              <li>✓ Informar sobre claustrofobia</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-semibold text-amber-900 mb-4">Durante el estudio</h3>
+            <ul class="text-amber-800 text-sm space-y-2">
+              <li>✓ Permanecer inmóvil durante las secuencias</li>
+              <li>✓ Respirar normalmente (salvo indicación)</li>
+              <li>✓ Usar tapones para oídos (se proporcionan)</li>
+              <li>✓ Comunicar cualquier molestia</li>
+              <li>✓ Seguir las instrucciones del técnico</li>
+              <li>✓ Mantener la calma y relajarse</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-6 p-4 bg-red-100 rounded-lg">
+          <p class="text-red-900 text-sm">
+            <strong>Contraindicaciones:</strong> Marcapasos, implantes cocleares, fragmentos metálicos en ojos, 
+            algunos stents o clips vasculares. Siempre informar sobre cualquier implante o cirugía previa.
+          </p>
+        </div>
+      </div>
+
+      <!-- Cobertura y costos -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold mb-6">Cobertura y Aranceles</h2>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-green-50 rounded-xl p-6 border border-green-200">
+            <h3 class="font-semibold text-green-900 mb-4">Obras Sociales</h3>
+            <ul class="text-green-800 text-sm space-y-2">
+              <li>• <strong>PAMI:</strong> Cobertura 100% con orden</li>
+              <li>• <strong>IOMA:</strong> Cobertura 100% con orden</li>
+              <li>• <strong>OSDE:</strong> Según plan y modalidad</li>
+              <li>• <strong>Swiss Medical:</strong> Consultar cobertura</li>
+              <li>• <strong>Otras obras sociales:</strong> Verificar autorización</li>
+            </ul>
+          </div>
+
+          <div class="bg-blue-50 rounded-xl p-6 border border-blue-200">
+            <h3 class="font-semibold text-blue-900 mb-4">Información Importante</h3>
+            <ul class="text-blue-800 text-sm space-y-2">
+              <li>• Algunos estudios requieren autorización previa</li>
+              <li>• El contraste puede tener costo adicional</li>
+              <li>• Consultar cobertura antes del turno</li>
+              <li>• Precios particulares: consultar al reservar</li>
+              <li>• Facilidades de pago disponibles</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Disponibilidad -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold mb-6">Disponibilidad</h2>
+        
+        <div class="bg-white rounded-xl border border-slate-200 p-6">
+          <div class="text-center mb-6">
+            <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-blue-900">Sede Berazategui</h3>
+            <p class="text-slate-600">Equipo de alto campo disponible</p>
+          </div>
+          
+          <div class="grid md:grid-cols-2 gap-6 text-sm">
+            <div>
+              <p class="font-medium text-slate-900 mb-2">Horarios de atención:</p>
+              <ul class="text-slate-600 space-y-1">
+                <li>Lunes a Viernes: 7:00 - 19:00</li>
+                <li>Sábados: 8:00 - 13:00</li>
+                <li>Domingos: Consultar disponibilidad</li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-medium text-slate-900 mb-2">Resultados:</p>
+              <ul class="text-slate-600 space-y-1">
+                <li>Entrega: 24-48 horas</li>
+                <li>Urgencias: El mismo día</li>
+                <li>Portal online disponible</li>
+                <li>WhatsApp para consultas</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="bg-gradient-to-r from-purple-600 to-indigo-600 rounded-xl p-8 text-white text-center">
+        <h2 class="text-2xl font-bold mb-4">¿Necesitas una Resonancia Magnética?</h2>
+        <p class="mb-6 opacity-90">
+          Reserva tu turno y obtén un diagnóstico preciso con tecnología de alto campo
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="../turnos.html" class="bg-white text-purple-600 hover:bg-gray-50 px-6 py-3 rounded-xl font-semibold transition">
+            Sacar turno online
+          </a>
+          <a href="https://wa.me/5491100000000" class="border-2 border-white text-white hover:bg-white/10 px-6 py-3 rounded-xl font-semibold transition">
+            Consultar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t bg-slate-50 mt-16">
+    <div class="mx-auto max-w-7xl px-4 py-8">
+      <div class="text-center">
+        <p class="text-slate-600">&copy; 2025 Diagnosticar. Todos los derechos reservados.</p>
+        <p class="text-slate-500 text-sm mt-2">
+          <a href="../index.html" class="hover:text-primary">Volver al inicio</a> | 
+          <a href="../servicios.html" class="hover:text-primary">Ver todos los servicios</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

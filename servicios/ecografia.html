@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ecografía — Diagnosticar Centro Médico</title>
+  <meta name="description" content="Estudios ecográficos generales, ginecológicos y doppler. Tecnología avanzada para diagnósticos precisos." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/avif" href="../assets/images/logoCompleto.avif" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            primary: '#0F62FE',
+            secondary: '#8AB4F8',
+            success: '#12A150',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans text-slate-800 bg-white">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-100">
+    <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
+      <a href="../index.html" class="flex items-center gap-3" aria-label="Diagnosticar inicio">
+        <img src="../assets/images/logoCompleto.avif" alt="Diagnosticar" class="h-9 w-auto" loading="eager" />
+        <span class="text-lg font-semibold">Diagnosticar</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="../servicios.html" class="text-primary">Servicios</a>
+        <a href="../sedes.html" class="hover:text-primary">Sedes</a>
+        <a href="../turnos.html" class="hover:text-primary">Turnos</a>
+        <a href="../resultados.html" class="hover:text-primary">Resultados</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="bg-slate-50 py-3 border-b">
+    <div class="mx-auto max-w-7xl px-4">
+      <nav class="flex items-center space-x-2 text-sm text-slate-600">
+        <a href="../index.html" class="hover:text-primary">Inicio</a>
+        <span>•</span>
+        <a href="../servicios.html" class="hover:text-primary">Servicios</a>
+        <span>•</span>
+        <span class="text-slate-900 font-medium">Ecografía</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="py-12 bg-gradient-to-br from-teal-50 to-blue-50">
+    <div class="mx-auto max-w-4xl px-4 text-center">
+      <div class="w-16 h-16 bg-teal-100 rounded-xl flex items-center justify-center mx-auto mb-6">
+        <svg class="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+        </svg>
+      </div>
+      <h1 class="text-4xl font-bold text-slate-900 mb-4">Ecografía</h1>
+      <p class="text-xl text-slate-600">
+        Estudios ecográficos con equipos de última generación y profesionales especializados
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="py-12">
+    <div class="mx-auto max-w-4xl px-4">
+      
+      <!-- Tipos de ecografía -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold mb-6">Tipos de Estudios Ecográficos</h2>
+        <div class="space-y-6">
+          
+          <div class="bg-white rounded-xl border border-slate-200 p-6">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                </svg>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-lg font-semibold mb-2">Ecografía Abdominal Completa</h3>
+                <p class="text-slate-600 text-sm mb-3">
+                  Evaluación de órganos abdominales: hígado, vesícula biliar, páncreas, bazo, riñones y vejiga.
+                </p>
+                <div class="grid md:grid-cols-2 gap-4 text-sm">
+                  <div>
+                    <p class="font-medium text-slate-700">Preparación:</p>
+                    <p class="text-slate-600">Ayuno 6-8 horas, vejiga llena</p>
+                  </div>
+                  <div>
+                    <p class="font-medium text-slate-700">Duración:</p>
+                    <p class="text-slate-600">15-20 minutos</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl border border-slate-200 p-6">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                </svg>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-lg font-semibold mb-2">Ecografía Ginecológica</h3>
+                <p class="text-slate-600 text-sm mb-3">
+                  Estudio de útero, ovarios y estructuras pélvicas. Puede ser abdominal o transvaginal según indicación médica.
+                </p>
+                <div class="grid md:grid-cols-2 gap-4 text-sm">
+                  <div>
+                    <p class="font-medium text-slate-700">Preparación:</p>
+                    <p class="text-slate-600">Vejiga llena (abdominal)</p>
+                  </div>
+                  <div>
+                    <p class="font-medium text-slate-700">Aplicaciones:</p>
+                    <p class="text-slate-600">Control ginecológico, seguimiento</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl border border-slate-200 p-6">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1.586a1 1 0 01.707.293L12 11l.707-.707A1 1 0 0113.414 10H15M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-lg font-semibold mb-2">Ecografía Obstétrica</h3>
+                <p class="text-slate-600 text-sm mb-3">
+                  Seguimiento del embarazo, evaluación del desarrollo fetal y control de bienestar materno-fetal.
+                </p>
+                <div class="grid md:grid-cols-2 gap-4 text-sm">
+                  <div>
+                    <p class="font-medium text-slate-700">Preparación:</p>
+                    <p class="text-slate-600">Sin preparación especial</p>
+                  </div>
+                  <div>
+                    <p class="font-medium text-slate-700">Aplicaciones:</p>
+                    <p class="text-slate-600">Control prenatal, morfológica</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl border border-slate-200 p-6">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                </svg>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-lg font-semibold mb-2">Doppler Vascular</h3>
+                <p class="text-slate-600 text-sm mb-3">
+                  Evaluación del flujo sanguíneo en arterias y venas. Detección de trombosis, estenosis y problemas circulatorios.
+                </p>
+                <div class="grid md:grid-cols-2 gap-4 text-sm">
+                  <div>
+                    <p class="font-medium text-slate-700">Tipos:</p>
+                    <p class="text-slate-600">Arterial, venoso, cardiaco</p>
+                  </div>
+                  <div>
+                    <p class="font-medium text-slate-700">Duración:</p>
+                    <p class="text-slate-600">20-30 minutos</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Preparación detallada -->
+      <div class="bg-teal-50 rounded-xl p-8 mb-12">
+        <h2 class="text-2xl font-bold text-teal-900 mb-6">Preparación para Ecografías</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="font-semibold text-teal-900 mb-4">Ecografía Abdominal</h3>
+            <ul class="text-teal-800 text-sm space-y-2">
+              <li>✓ Ayuno sólido de 6-8 horas</li>
+              <li>✓ Puede tomar agua hasta 2 horas antes</li>
+              <li>✓ 1 hora antes: beber 1 litro de agua</li>
+              <li>✓ No orinar hasta después del estudio</li>
+              <li>✓ Evitar gaseosas 24hs antes</li>
+              <li>✓ No masticar chicle ni fumar</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-semibold text-teal-900 mb-4">Ecografía Ginecológica</h3>
+            <ul class="text-teal-800 text-sm space-y-2">
+              <li>✓ Vejiga llena (solo si es abdominal)</li>
+              <li>✓ Transvaginal: vejiga vacía</li>
+              <li>✓ Higiene íntima habitual</li>
+              <li>✓ Ropa cómoda y fácil de quitar</li>
+              <li>✓ Informar fecha última menstruación</li>
+              <li>✓ Traer toalla femenina si corresponde</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-6 p-4 bg-teal-100 rounded-lg">
+          <p class="text-teal-900 text-sm">
+            <strong>Nota:</strong> Si tienes diabetes, consulta con tu médico sobre las restricciones de ayuno. 
+            La preparación puede variar según el tipo específico de estudio.
+          </p>
+        </div>
+      </div>
+
+      <!-- Ventajas de la ecografía -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold text-center mb-8">Ventajas de la Ecografía</h2>
+        
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="text-center p-6">
+            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+              <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold mb-2">Sin radiación</h3>
+            <p class="text-slate-600 text-sm">Método seguro que no utiliza radiación ionizante</p>
+          </div>
+
+          <div class="text-center p-6">
+            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+              <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold mb-2">Tiempo real</h3>
+            <p class="text-slate-600 text-sm">Visualización inmediata de estructuras y movimiento</p>
+          </div>
+
+          <div class="text-center p-6">
+            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+              <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold mb-2">No invasivo</h3>
+            <p class="text-slate-600 text-sm">Procedimiento indoloro y cómodo para el paciente</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Disponibilidad -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold mb-6">Disponibilidad en Nuestras Sedes</h2>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-white rounded-xl border border-slate-200 p-6">
+            <h3 class="text-lg font-semibold mb-4 text-blue-900">Sede Berazategui</h3>
+            <div class="space-y-3 text-sm">
+              <div>
+                <p class="font-medium">Todos los estudios disponibles</p>
+                <p class="text-slate-600">Ecografía general, ginecológica, obstétrica y doppler</p>
+              </div>
+              <div>
+                <p class="font-medium">Horarios:</p>
+                <p class="text-slate-600">Lun a Vie: 7:00-19:00 | Sáb: 8:00-13:00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl border border-slate-200 p-6">
+            <h3 class="text-lg font-semibold mb-4 text-green-900">Sede Lomas de Zamora</h3>
+            <div class="space-y-3 text-sm">
+              <div>
+                <p class="font-medium">Estudios principales</p>
+                <p class="text-slate-600">Ecografía general, ginecológica y obstétrica</p>
+              </div>
+              <div>
+                <p class="font-medium">Horarios:</p>
+                <p class="text-slate-600">Lun a Vie: 8:00-18:00 | Sáb: 8:00-12:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="bg-gradient-to-r from-teal-600 to-blue-600 rounded-xl p-8 text-white text-center">
+        <h2 class="text-2xl font-bold mb-4">¿Necesitas una Ecografía?</h2>
+        <p class="mb-6 opacity-90">
+          Programa tu estudio ecográfico con nuestros especialistas
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="../turnos.html" class="bg-white text-teal-600 hover:bg-gray-50 px-6 py-3 rounded-xl font-semibold transition">
+            Sacar turno online
+          </a>
+          <a href="https://wa.me/5491100000000" class="border-2 border-white text-white hover:bg-white/10 px-6 py-3 rounded-xl font-semibold transition">
+            Consultar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t bg-slate-50 mt-16">
+    <div class="mx-auto max-w-7xl px-4 py-8">
+      <div class="text-center">
+        <p class="text-slate-600">&copy; 2025 Diagnosticar. Todos los derechos reservados.</p>
+        <p class="text-slate-500 text-sm mt-2">
+          <a href="../index.html" class="hover:text-primary">Volver al inicio</a> | 
+          <a href="../servicios.html" class="hover:text-primary">Ver todos los servicios</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

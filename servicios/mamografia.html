@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mamografía — Diagnosticar Centro Médico</title>
+  <meta name="description" content="Detección temprana de patología mamaria con tecnología digital. Mamografía digital y estudios de seguimiento." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/avif" href="../assets/images/logoCompleto.avif" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            primary: '#0F62FE',
+            secondary: '#8AB4F8',
+            success: '#12A150',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans text-slate-800 bg-white">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-100">
+    <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
+      <a href="../index.html" class="flex items-center gap-3" aria-label="Diagnosticar inicio">
+        <img src="../assets/images/logoCompleto.avif" alt="Diagnosticar" class="h-9 w-auto" loading="eager" />
+        <span class="text-lg font-semibold">Diagnosticar</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="../servicios.html" class="text-primary">Servicios</a>
+        <a href="../sedes.html" class="hover:text-primary">Sedes</a>
+        <a href="../turnos.html" class="hover:text-primary">Turnos</a>
+        <a href="../resultados.html" class="hover:text-primary">Resultados</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="bg-slate-50 py-3 border-b">
+    <div class="mx-auto max-w-7xl px-4">
+      <nav class="flex items-center space-x-2 text-sm text-slate-600">
+        <a href="../index.html" class="hover:text-primary">Inicio</a>
+        <span>•</span>
+        <a href="../servicios.html" class="hover:text-primary">Servicios</a>
+        <span>•</span>
+        <span class="text-slate-900 font-medium">Mamografía</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="py-12 bg-gradient-to-br from-rose-50 to-fuchsia-50">
+    <div class="mx-auto max-w-4xl px-4 text-center">
+      <div class="w-16 h-16 bg-rose-100 rounded-xl flex items-center justify-center mx-auto mb-6">
+        <svg class="w-8 h-8 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+        </svg>
+      </div>
+      <h1 class="text-4xl font-bold text-slate-900 mb-4">Mamografía</h1>
+      <p class="text-xl text-slate-600">
+        Estudio fundamental para la detección temprana del cáncer de mama.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="py-12">
+    <div class="mx-auto max-w-4xl px-4">
+      
+      <!-- Servicios disponibles -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold mb-6">Nuestros Estudios Mamográficos</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          
+          <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+            <h3 class="text-lg font-semibold mb-3">Mamografía Digital</h3>
+            <p class="text-slate-600 text-sm mb-4">
+              Imágenes de alta resolución para una detección precisa de anomalías, incluso en sus etapas iniciales.
+            </p>
+            <ul class="text-sm text-slate-500 space-y-1 mb-4">
+              <li>• Tecnología de última generación</li>
+              <li>• Menor dosis de radiación</li>
+              <li>• Mayor confort para la paciente</li>
+              <li>• Cobertura PAMI/IOMA 100%</li>
+            </ul>
+          </div>
+
+          <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+            <h3 class="text-lg font-semibold mb-3">Control Anual y Seguimiento</h3>
+            <p class="text-slate-600 text-sm mb-4">
+              Realización de estudios periódicos para control y seguimiento de patologías mamarias.
+            </p>
+            <ul class="text-sm text-slate-500 space-y-1 mb-4">
+              <li>• Control mamográfico anual</li>
+              <li>• Seguimiento de nódulos y quistes</li>
+              <li>• Comparación con estudios previos</li>
+              <li>• Informes detallados</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="bg-gradient-to-r from-primary to-secondary rounded-xl p-8 text-white text-center">
+        <h2 class="text-2xl font-bold mb-4">¿Necesitas un turno de Mamografía?</h2>
+        <p class="mb-6 opacity-90">
+          Reserva tu estudio de forma fácil y rápida
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="../turnos.html" class="bg-white text-primary hover:bg-gray-50 px-6 py-3 rounded-xl font-semibold transition">
+            Sacar turno online
+          </a>
+          <a href="https://wa.me/5491100000000" class="border-2 border-white text-white hover:bg-white/10 px-6 py-3 rounded-xl font-semibold transition">
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t bg-slate-50 mt-16">
+    <div class="mx-auto max-w-7xl px-4 py-8">
+      <div class="text-center">
+        <p class="text-slate-600">&copy; 2025 Diagnosticar. Todos los derechos reservados.</p>
+        <p class="text-slate-500 text-sm mt-2">
+          <a href="../index.html" class="hover:text-primary">Volver al inicio</a> | 
+          <a href="../servicios.html" class="hover:text-primary">Ver todos los servicios</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

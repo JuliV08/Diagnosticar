@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Diagnosticar — Centro Médico</title>
+  <meta name="description" content="Guardia médica, especialidades y diagnóstico por imágenes. PAMI e IOMA 100% sin copagos. Berazategui y Lomas de Zamora." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/avif" href="assets/images/logoCompleto.avif" />
+  <!-- Tailwind via CDN for wireframe preview -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            primary: '#0F62FE',
+            secondary: '#8AB4F8',
+            success: '#12A150',
+          },
+          boxShadow: {
+            soft: '0 2px 10px rgba(0,0,0,.06)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Wireframe helpers */
+    .wf-placeholder{background-image:linear-gradient(135deg,#f4f6f8 25%,#e9eef3 25%,#e9eef3 50%,#f4f6f8 50%,#f4f6f8 75%,#e9eef3 75%,#e9eef3 100%);background-size:24px 24px}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "Diagnosticar",
+    "url": "https://www.diagnosticar.org/",
+    "medicalSpecialty": ["Cardiovascular", "Radiology", "Traumatology", "Pediatrics"],
+    "address": [{
+      "@type":"PostalAddress",
+      "streetAddress":"Sede Berazategui",
+      "addressLocality":"Berazategui",
+      "addressRegion":"Buenos Aires",
+      "addressCountry":"AR"
+    },{
+      "@type":"PostalAddress",
+      "streetAddress":"Sede Lomas de Zamora",
+      "addressLocality":"Lomas de Zamora",
+      "addressRegion":"Buenos Aires",
+      "addressCountry":"AR"
+    }],
+    "openingHoursSpecification": [{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"20:00"}],
+    "telephone": "+54 11 0000-0000"
+  }
+  </script>
+</head>
+<body class="font-sans text-slate-800 bg-white">
+  <!-- Top status bar -->
+  <div id="statusBar" class="w-full bg-slate-900 text-white text-sm">
+    <div class="mx-auto max-w-7xl px-4 py-2 flex items-center justify-between gap-4">
+      <p class="truncate"><span class="inline-block h-2 w-2 rounded-full bg-green-400 mr-2 align-middle"></span><strong>Guardia hoy:</strong> 07:00–20:00 · Domingos 16:00–20:00</p>
+      <div class="flex items-center gap-3">
+        <a href="#turnos" class="underline text-white/90 hover:text-white">Sacar turno</a>
+        <a href="https://wa.me/5491100000000" class="underline text-white/90 hover:text-white" aria-label="WhatsApp Diagnosticar">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-100">
+    <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3" aria-label="Diagnosticar inicio">
+        <img src="assets/images/logoCompleto.avif" alt="Diagnosticar" class="h-9 w-auto" loading="eager" />
+      
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="profesionales.html" class="hover:text-primary">Profesionales</a>
+        <a href="servicios.html" class="hover:text-primary">Servicios</a>
+        <a href="sedes.html" class="hover:text-primary">Sedes</a>
+        <a href="faqs.html" class="hover:text-primary">FAQ's</a>
+        <a href="turnos.html" class="hover:text-primary">Turnos</a>
+        <a href="resultados.html" class="hover:text-primary">Resultados</a>
+        <a href="contacto.html" class="hover:text-primary">Contacto</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="turnos.html" class="hidden sm:inline-flex items-center justify-center rounded-xl border border-primary text-primary hover:bg-primary/5 px-4 py-2 text-sm font-medium">WhatsApp ahora</a>
+        <a href="turnos.html" class="inline-flex items-center justify-center rounded-xl bg-primary text-white hover:bg-primary/90 px-4 py-2 text-sm font-semibold">Sacar turno</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative">
+    <div class="mx-auto max-w-7xl px-4 grid md:grid-cols-2 gap-10 py-14 md:py-20 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-semibold tracking-tight">Guardia, especialidades y diagnóstico</h1>
+        <p class="mt-4 text-lg text-slate-600">IOMA y PAMI <span class="text-success font-semibold">100% sin copagos</span>. Turnos online u orientación por WhatsApp. Resultados e indicaciones claras para cada estudio.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="turnos.html" class="inline-flex items-center justify-center rounded-xl bg-primary text-white hover:bg-primary/90 px-5 py-3 font-semibold" aria-label="Ir a turnos">Sacar turno</a>
+          <a href="portal-paciente/whatsapp.html" class="inline-flex items-center justify-center rounded-xl bor8577757der border-slate-300 hover:bg-slate-50 px-5 py-3 font-medium" aria-label="Abrir WhatsApp">WhatsApp ahora</a>
+        </div>
+        <div class="mt-6 flex flex-wrap items-center gap-4 text-sm text-slate-600">
+          <div class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-primary"></span> Cobertura 100% PAMI / IOMA</div>
+          <div class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-primary"></span> Resultados online</div>
+          <div class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-primary"></span> Turnos por WhatsApp</div>
+        </div>
+      </div>
+      <div class="aspect-[4/3] rounded-2xl shadow-soft overflow-hidden">
+  <img src="assets/images/hero-image.avif" alt="Diagnosticar — imagen institucional" class="w-full h-full object-cover" loading="lazy" />
+</div>
+    </div>
+  </section>
+
+  <!-- Accesos rápidos -->
+  <section aria-labelledby="accesos-title" class="py-6 md:py-10 bg-slate-50 border-y">
+    <div class="mx-auto max-w-7xl px-4">
+      <h2 id="accesos-title" class="sr-only">Accesos rápidos</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+        <a href="turnos.html" class="group rounded-2xl bg-white p-5 shadow-soft hover:shadow transition">
+          <div class="h-10 w-10 rounded-lg bg-blue-50 flex items-center justify-center mb-3 group-hover:bg-blue-100 transition-colors">
+            <svg class="h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3a1 1 0 011-1h6a1 1 0 011 1v4h3a1 1 0 011 1v8a1 1 0 01-1 1H5a1 1 0 01-1-1V8a1 1 0 011-1h3z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 12h.01"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 16h.01"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16h.01"/>
+            </svg>
+          </div>
+          <div class="font-semibold">Turnos</div>
+          <p class="text-sm text-slate-600">Reservá online o por WhatsApp.</p>
+        </a>
+        <a href="resultados.html" class="group rounded-2xl bg-white p-5 shadow-soft hover:shadow transition">
+          <div class="h-10 w-10 rounded-lg bg-green-50 flex items-center justify-center mb-3 group-hover:bg-green-100 transition-colors">
+            <svg class="h-5 w-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+            </svg>
+          </div>
+          <div class="font-semibold">Resultados</div>
+          <p class="text-sm text-slate-600">Consultá informes y estudios.</p>
+        </a>
+        <a href="sedes.html" class="group rounded-2xl bg-white p-5 shadow-soft hover:shadow transition">
+          <div class="h-10 w-10 rounded-lg bg-purple-50 flex items-center justify-center mb-3 group-hover:bg-purple-100 transition-colors">
+            <svg class="h-5 w-5 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+          </div>
+          <div class="font-semibold">Sedes</div>
+          <p class="text-sm text-slate-600">Berazategui y Lomas.</p>
+        </a>
+        <a href="faqs.html" class="group rounded-2xl bg-white p-5 shadow-soft hover:shadow transition">
+          <div class="h-10 w-10 rounded-lg bg-amber-50 flex items-center justify-center mb-3 group-hover:bg-amber-100 transition-colors">
+            <svg class="h-5 w-5 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <div class="font-semibold">FAQ's</div>
+          <p class="text-sm text-slate-600">Preguntas frecuentes.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios destacados -->
+<!-- Servicios destacados -->
+<section id="servicios" class="py-20 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-semibold text-gray-800 mb-12">Servicios destacados</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+      <!-- Resonancia magnética -->
+      <div class="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition">
+        <div class="h-36 flex items-center justify-center mb-6 text-blue-600">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 2a10 10 0 1 0 10 10M12 2v4m0 12v4m-8-8H2m20 0h-4"/>
+            <circle cx="12" cy="12" r="3" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Resonancia magnética</h3>
+        <p class="text-gray-600">Tecnología de alta resolución para estudios detallados, con resultados digitales y confort para el paciente.</p>
+      </div>
+
+      <!-- Ecografía -->
+      <div class="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition">
+        <div class="h-36 flex items-center justify-center mb-6 text-blue-600">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 6h18M6 10h12M9 14h6m-9 4h12"/>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Ecografía</h3>
+        <p class="text-gray-600">Ecografías generales y especializadas con equipos modernos y atención personalizada.</p>
+      </div>
+
+      <!-- Laboratorio -->
+      <div class="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition">
+        <div class="h-36 flex items-center justify-center mb-6 text-blue-600">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10 2v10l-4 8h12l-4-8V2m-2 0h0" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Laboratorio</h3>
+        <p class="text-gray-600">Análisis clínicos rápidos y precisos con informes disponibles en línea.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Cómo atenderte -->
+<section aria-labelledby="como-title" class="py-16 bg-white border-y">
+  <div class="mx-auto max-w-7xl px-6">
+    <h2 id="como-title" class="text-3xl font-semibold text-gray-800 mb-10 text-center">Cómo atenderte</h2>
+    <div class="grid md:grid-cols-3 gap-8 text-center">
+      <div>
+        <div class="mx-auto mb-4 text-blue-600">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3h8v4m-6 4v10m4-10v10m-8 0h12"/>
+          </svg>
+        </div>
+        <h3 class="font-semibold text-lg">Turnos online</h3>
+        <p class="text-gray-600 text-sm mt-2">Reservá tus estudios de forma rápida desde tu celular o computadora.</p>
+      </div>
+      <div>
+        <div class="mx-auto mb-4 text-blue-600">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2 8l10 6 10-6M2 16l10 6 10-6"/>
+          </svg>
+        </div>
+        <h3 class="font-semibold text-lg">Atención por WhatsApp</h3>
+        <p class="text-gray-600 text-sm mt-2">Contactanos directamente para consultas o preparación de estudios.</p>
+      </div>
+      <div>
+        <div class="mx-auto mb-4 text-blue-600">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2"/>
+          </svg>
+        </div>
+        <h3 class="font-semibold text-lg">Resultados online</h3>
+        <p class="text-gray-600 text-sm mt-2">Accedé a tus informes digitales desde cualquier dispositivo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sedes y horarios -->
+<section id="sedes" class="py-16 bg-gray-50">
+  <div class="mx-auto max-w-7xl px-6">
+    <h2 class="text-3xl font-semibold text-gray-800 mb-10 text-center">Sedes y horarios</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <article class="bg-white rounded-2xl shadow-md p-6">
+        <h3 class="text-xl font-semibold mb-1">Sede Berazategui</h3>
+        <p class="text-sm text-gray-600 mb-3">Lisandro de la Torre 1342 · Lun a Vie 07–20 · Sáb 08–13</p>
+        <div class="aspect-[4/3] bg-gray-100 rounded-xl"></div>
+      </article>
+      <article class="bg-white rounded-2xl shadow-md p-6">
+        <h3 class="text-xl font-semibold mb-1">Sede Lomas de Zamora</h3>
+        <p class="text-sm text-gray-600 mb-3">Av. Mitre 456 · Lun a Vie 07–20 · Sáb 08–13</p>
+        <div class="aspect-[4/3] bg-gray-100 rounded-xl"></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Coberturas -->
+<section id="coberturas" class="py-16 bg-white border-y">
+  <div class="mx-auto max-w-7xl px-6 text-center">
+    <h2 class="text-3xl font-semibold text-gray-800">Coberturas</h2>
+    <p class="mt-2 text-gray-600">IOMA y PAMI 100% sin copagos. También trabajamos con otras obras sociales y prepagas.</p>
+    <div class="mt-8 grid grid-cols-2 md:grid-cols-6 gap-4">
+      <div class="h-14 rounded-xl bg-gray-100"></div>
+      <div class="h-14 rounded-xl bg-gray-100"></div>
+      <div class="h-14 rounded-xl bg-gray-100"></div>
+      <div class="h-14 rounded-xl bg-gray-100"></div>
+      <div class="h-14 rounded-xl bg-gray-100"></div>
+      <div class="h-14 rounded-xl bg-gray-100"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Preparaciones -->
+<section id="preparaciones" class="py-16 bg-gray-50">
+  <div class="mx-auto max-w-7xl px-6">
+    <h2 class="text-3xl font-semibold text-gray-800 text-center mb-10">Preparaciones y preguntas frecuentes</h2>
+    <div class="divide-y divide-gray-200 border border-gray-200 rounded-2xl bg-white">
+      <details class="group p-5" open>
+        <summary class="cursor-pointer list-none flex items-center justify-between">
+          <span class="font-medium">¿Cómo preparo una ecografía abdominal?</span>
+          <span class="ml-4 text-gray-500 group-open:rotate-180 transition">⌄</span>
+        </summary>
+        <p class="mt-3 text-sm text-gray-600">Ayuno de 6–8 horas. Beber agua para mejor ventana acústica según indicación.</p>
+      </details>
+      <details class="group p-5">
+        <summary class="cursor-pointer list-none flex items-center justify-between">
+          <span class="font-medium">¿Cómo consulto mis resultados?</span>
+          <span class="ml-4 text-gray-500 group-open:rotate-180 transition">⌄</span>
+        </summary>
+        <p class="mt-3 text-sm text-gray-600">Ingresá a Resultados con tu DNI y código de estudio.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- Resultados -->
+<section id="resultados" class="py-16 bg-white border-y">
+  <div class="mx-auto max-w-7xl px-6 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h2 class="text-3xl font-semibold text-gray-800 mb-3">Resultados e informes online</h2>
+      <p class="text-gray-600 mb-6">Accedé a tus estudios y descargá informes en PDF. Si necesitás ayuda, escribinos por WhatsApp.</p>
+      <div class="flex gap-3">
+        <a href="resultados.html" class="bg-blue-600 text-white px-5 py-3 rounded-xl font-semibold hover:bg-blue-700 transition">Ir al portal</a>
+        <a href="portal-paciente/whatsapp.html" class="border border-gray-300 px-5 py-3 rounded-xl font-medium hover:bg-gray-50 transition">Necesito ayuda</a>
+      </div>
+    </div>
+    <div class="aspect-[4/3] bg-gray-100 rounded-2xl"></div>
+  </div>
+</section>
+
+<!-- CTA Turnos -->
+<section id="turnos" class="py-20 text-center bg-gray-50">
+  <h2 class="text-3xl font-semibold text-gray-800">¿Listo para tu turno?</h2>
+  <p class="mt-2 text-gray-600">Elegí la modalidad que prefieras. Guardamos tu preferencia para la próxima.</p>
+  <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
+    <a href="turnos.html" class="bg-blue-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-700 transition">Turno online</a>
+    <a href="portal-paciente/whatsapp.html" class="border border-gray-300 px-6 py-3 rounded-xl font-medium hover:bg-gray-50 transition">Hablar por WhatsApp</a>
+  </div>
+  <p class="mt-3 text-xs text-gray-500">Al continuar aceptás nuestros términos y privacidad.</p>
+</section>
+
+<!-- Footer -->
+<footer class="border-t bg-white py-10 text-sm text-gray-600 text-center">
+  <p>© <span id="y"></span> Diagnosticar. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

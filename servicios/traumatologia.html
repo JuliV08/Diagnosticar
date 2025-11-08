@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Traumatología — Diagnosticar Centro Médico</title>
+  <meta name="description" content="Especialidad en traumatología. Tratamiento de lesiones óseas, articulares y musculares. Radiografías y consultas." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/avif" href="../assets/images/logoCompleto.avif" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            primary: '#0F62FE',
+            secondary: '#8AB4F8',
+            success: '#12A150',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans text-slate-800 bg-white">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-100">
+    <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
+      <a href="../index.html" class="flex items-center gap-3" aria-label="Diagnosticar inicio">
+        <img src="../assets/images/logoCompleto.avif" alt="Diagnosticar" class="h-9 w-auto" loading="eager" />
+        <span class="text-lg font-semibold">Diagnosticar</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="../servicios.html" class="text-primary">Servicios</a>
+        <a href="../sedes.html" class="hover:text-primary">Sedes</a>
+        <a href="../turnos.html" class="hover:text-primary">Turnos</a>
+        <a href="../resultados.html" class="hover:text-primary">Resultados</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="bg-slate-50 py-3 border-b">
+    <div class="mx-auto max-w-7xl px-4">
+      <nav class="flex items-center space-x-2 text-sm text-slate-600">
+        <a href="../index.html" class="hover:text-primary">Inicio</a>
+        <span>•</span>
+        <a href="../servicios.html" class="hover:text-primary">Servicios</a>
+        <span>•</span>
+        <span class="text-slate-900 font-medium">Traumatología</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="py-12 bg-gradient-to-br from-blue-50 to-cyan-50">
+    <div class="mx-auto max-w-4xl px-4 text-center">
+      <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-6">
+        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+        </svg>
+      </div>
+      <h1 class="text-4xl font-bold text-slate-900 mb-4">Traumatología</h1>
+      <p class="text-xl text-slate-600">
+        Diagnóstico y tratamiento de lesiones del aparato locomotor.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="py-12">
+    <div class="mx-auto max-w-4xl px-4">
+      
+      <!-- Servicios disponibles -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold mb-6">Tratamientos y Consultas</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          
+          <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+            <h3 class="text-lg font-semibold mb-3">Consulta Traumatológica</h3>
+            <p class="text-slate-600 text-sm mb-4">
+              Evaluación clínica de dolencias, lesiones deportivas, y enfermedades degenerativas articulares.
+            </p>
+            <ul class="text-sm text-slate-500 space-y-1 mb-4">
+              <li>• Dolor de espalda y cuello</li>
+              <li>• Lesiones de rodilla y hombro</li>
+              <li>• Artrosis</li>
+              <li>• Cobertura PAMI/IOMA 100%</li>
+            </ul>
+          </div>
+
+          <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+            <h3 class="text-lg font-semibold mb-3">Radiología Digital</h3>
+            <p class="text-slate-600 text-sm mb-4">
+              Estudios por imágenes para el diagnóstico preciso de fracturas, luxaciones y otras patologías óseas.
+            </p>
+            <ul class="text-sm text-slate-500 space-y-1 mb-4">
+              <li>• Radiografías de alta definición</li>
+              <li>• Mínima exposición a radiación</li>
+              <li>• Resultados inmediatos</li>
+              <li>• Sin preparación especial</li>
+            </ul>
+          </div>
+
+          <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+            <h3 class="text-lg font-semibold mb-3">Infiltraciones</h3>
+            <p class="text-slate-600 text-sm mb-4">
+              Tratamiento localizado para aliviar el dolor y la inflamación en articulaciones y tendones.
+            </p>
+            <ul class="text-sm text-slate-500 space-y-1 mb-4">
+              <li>• Procedimiento ambulatorio</li>
+              <li>• Alivio rápido del dolor</li>
+              <li>• Realizado por especialistas</li>
+              <li>• Requiere indicación médica</li>
+            </ul>
+          </div>
+
+          <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+            <h3 class="text-lg font-semibold mb-3">Yesos y Férulas</h3>
+            <p class="text-slate-600 text-sm mb-4">
+              Inmovilización de fracturas y lesiones para una correcta recuperación.
+            </p>
+            <ul class="text-sm text-slate-500 space-y-1 mb-4">
+              <li>• Colocación y retiro</li>
+              <li>• Materiales modernos</li>
+              <li>• Seguimiento de la lesión</li>
+              <li>• Atención de urgencias</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="bg-gradient-to-r from-primary to-secondary rounded-xl p-8 text-white text-center">
+        <h2 class="text-2xl font-bold mb-4">¿Necesitas un turno de Traumatología?</h2>
+        <p class="mb-6 opacity-90">
+          Reserva tu consulta o estudio traumatológico de forma fácil y rápida
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="../turnos.html" class="bg-white text-primary hover:bg-gray-50 px-6 py-3 rounded-xl font-semibold transition">
+            Sacar turno online
+          </a>
+          <a href="https://wa.me/5491100000000" class="border-2 border-white text-white hover:bg-white/10 px-6 py-3 rounded-xl font-semibold transition">
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t bg-slate-50 mt-16">
+    <div class="mx-auto max-w-7xl px-4 py-8">
+      <div class="text-center">
+        <p class="text-slate-600">&copy; 2025 Diagnosticar. Todos los derechos reservados.</p>
+        <p class="text-slate-500 text-sm mt-2">
+          <a href="../index.html" class="hover:text-primary">Volver al inicio</a> | 
+          <a href="../servicios.html" class="hover:text-primary">Ver todos los servicios</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

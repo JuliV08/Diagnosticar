@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WhatsApp — Atención al Paciente | Diagnosticar</title>
+  <meta name="description" content="Contacta con nosotros por WhatsApp. Turnos, consultas y orientación médica rápida." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/avif" href="../assets/images/logoCompleto.avif" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            primary: '#0F62FE',
+            secondary: '#8AB4F8',
+            success: '#12A150',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans text-slate-800 bg-white">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-100">
+    <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
+      <a href="../index.html" class="flex items-center gap-3" aria-label="Diagnosticar inicio">
+        <img src="../assets/images/logoCompleto.avif" alt="Diagnosticar" class="h-9 w-auto" loading="eager" />
+        <span class="text-lg font-semibold">Diagnosticar</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="../servicios.html" class="hover:text-primary">Servicios</a>
+        <a href="../sedes.html" class="hover:text-primary">Sedes</a>
+        <a href="../turnos.html" class="hover:text-primary">Turnos</a>
+        <a href="../resultados.html" class="hover:text-primary">Resultados</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="py-12">
+    <div class="mx-auto max-w-4xl px-4">
+      <div class="text-center mb-10">
+        <div class="w-20 h-20 bg-success/10 rounded-full flex items-center justify-center mx-auto mb-6">
+          <svg class="w-10 h-10 text-success" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.736"/>
+          </svg>
+        </div>
+        <h1 class="text-4xl font-bold text-slate-900 mb-4">Atención por WhatsApp</h1>
+        <p class="text-xl text-slate-600">
+          Contacta con nosotros de forma rápida y directa para todas tus consultas médicas
+        </p>
+      </div>
+
+      <!-- Opciones de WhatsApp -->
+      <div class="grid md:grid-cols-2 gap-8 mb-12">
+        <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-8">
+          <div class="text-center">
+            <div class="w-16 h-16 bg-success/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <h2 class="text-2xl font-semibold mb-3">Turnos y Consultas</h2>
+            <p class="text-slate-600 mb-6">Para sacar turnos, reprogramar citas o consultas generales</p>
+            <a href="https://wa.me/5491100000000?text=Hola,%20necesito%20sacar%20un%20turno" 
+               class="inline-flex items-center justify-center bg-success text-white hover:bg-success/90 px-6 py-3 rounded-xl font-semibold transition">
+              <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.736"/>
+              </svg>
+              Escribir ahora
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl border border-slate-200 shadow-sm p-8">
+          <div class="text-center">
+            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+              </svg>
+            </div>
+            <h2 class="text-2xl font-semibold mb-3">Resultados</h2>
+            <p class="text-slate-600 mb-6">Para consultar por resultados de estudios o informes médicos</p>
+            <a href="https://wa.me/5491100000000?text=Hola,%20necesito%20consultar%20por%20mis%20resultados" 
+               class="inline-flex items-center justify-center bg-blue-600 text-white hover:bg-blue-700 px-6 py-3 rounded-xl font-semibold transition">
+              <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.736"/>
+              </svg>
+              Consultar resultados
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Información de contacto -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold text-center mb-8">Información de Contacto</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-blue-50 rounded-xl p-6 border border-blue-200">
+            <h3 class="font-semibold text-blue-900 mb-4 flex items-center gap-2">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+              Sede Berazategui
+            </h3>
+            <div class="space-y-3 text-blue-800 text-sm">
+              <div>
+                <p class="font-medium">WhatsApp:</p>
+                <p>+54 9 11 0000-0001</p>
+              </div>
+              <div>
+                <p class="font-medium">Teléfono:</p>
+                <p>(011) 4000-0001</p>
+              </div>
+              <div>
+                <p class="font-medium">Horario de atención:</p>
+                <p>Lun-Vie: 7:00-20:00 | Sáb: 8:00-13:00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-green-50 rounded-xl p-6 border border-green-200">
+            <h3 class="font-semibold text-green-900 mb-4 flex items-center gap-2">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+              Sede Lomas de Zamora
+            </h3>
+            <div class="space-y-3 text-green-800 text-sm">
+              <div>
+                <p class="font-medium">WhatsApp:</p>
+                <p>+54 9 11 0000-0002</p>
+              </div>
+              <div>
+                <p class="font-medium">Teléfono:</p>
+                <p>(011) 4000-0002</p>
+              </div>
+              <div>
+                <p class="font-medium">Horario de atención:</p>
+                <p>Lun-Vie: 7:00-20:00 | Sáb: 8:00-13:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ¿Qué puedes hacer por WhatsApp? -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold text-center mb-8">¿Qué puedes hacer por WhatsApp?</h2>
+        
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="text-center p-6">
+            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+              <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold mb-2">Sacar Turnos</h3>
+            <p class="text-slate-600 text-sm">Reserva citas médicas y estudios de forma rápida</p>
+          </div>
+
+          <div class="text-center p-6">
+            <div class="w-12 h-12 bg-success/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+              <svg class="w-6 h-6 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold mb-2">Consultas Rápidas</h3>
+            <p class="text-slate-600 text-sm">Resuelve dudas sobre preparaciones y horarios</p>
+          </div>
+
+          <div class="text-center p-6">
+            <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+              <svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold mb-2">Consultar Resultados</h3>
+            <p class="text-slate-600 text-sm">Obtén información sobre tus estudios médicos</p>
+          </div>
+
+          <div class="text-center p-6">
+            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+              <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold mb-2">Información</h3>
+            <p class="text-slate-600 text-sm">Ubicaciones, horarios y servicios disponibles</p>
+          </div>
+
+          <div class="text-center p-6">
+            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+              <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold mb-2">Ubicaciones</h3>
+            <p class="text-slate-600 text-sm">Direcciones y cómo llegar a nuestras sedes</p>
+          </div>
+
+          <div class="text-center p-6">
+            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+              <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold mb-2">Urgencias</h3>
+            <p class="text-slate-600 text-sm">Consultas de guardia y atención urgente</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Horarios de atención -->
+      <div class="bg-slate-50 rounded-xl p-8 mb-12">
+        <h2 class="text-2xl font-bold text-center mb-6">Horarios de Atención WhatsApp</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+          <div class="text-center">
+            <h3 class="font-semibold text-lg mb-3">Días Hábiles</h3>
+            <div class="space-y-2 text-slate-600">
+              <p><strong>Lunes a Viernes:</strong> 7:00 - 20:00</p>
+              <p><strong>Sábados:</strong> 8:00 - 13:00</p>
+            </div>
+          </div>
+          
+          <div class="text-center">
+            <h3 class="font-semibold text-lg mb-3">Domingos y Feriados</h3>
+            <div class="space-y-2 text-slate-600">
+              <p><strong>Urgencias:</strong> 16:00 - 20:00</p>
+              <p><strong>Solo Guardia Médica</strong></p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mt-6 p-4 bg-amber-100 rounded-lg text-center">
+          <p class="text-amber-800 text-sm">
+            <strong>Importante:</strong> Fuera de estos horarios, puedes dejar tu mensaje y te responderemos 
+            en el próximo horario de atención.
+          </p>
+        </div>
+      </div>
+
+      <!-- CTA Final -->
+      <div class="bg-gradient-to-r from-success to-green-600 rounded-xl p-8 text-white text-center">
+        <h2 class="text-2xl font-bold mb-4">¿Listo para contactarnos?</h2>
+        <p class="mb-6 opacity-90">
+          Nuestro equipo está disponible para ayudarte con todas tus consultas médicas
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="https://wa.me/5491100000000" 
+             class="bg-white text-success hover:bg-gray-50 px-8 py-4 rounded-xl font-bold text-lg transition inline-flex items-center gap-3">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.736"/>
+            </svg>
+            Escribir ahora
+          </a>
+        </div>
+        
+        <p class="text-sm opacity-75 mt-4">
+          También puedes llamarnos: 
+          <a href="tel:+541100000000" class="underline font-medium">+54 11 0000-0000</a>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t bg-slate-50 mt-16">
+    <div class="mx-auto max-w-7xl px-4 py-8 text-center">
+      <p class="text-slate-600">&copy; 2025 Diagnosticar. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

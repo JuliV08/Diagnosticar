@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pediatría — Diagnosticar Centro Médico</title>
+  <meta name="description" content="Atención médica especializada para niños y adolescentes. Controles, vacunación y seguimiento." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/avif" href="../assets/images/logoCompleto.avif" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            primary: '#0F62FE',
+            secondary: '#8AB4F8',
+            success: '#12A150',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans text-slate-800 bg-white">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-100">
+    <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
+      <a href="../index.html" class="flex items-center gap-3" aria-label="Diagnosticar inicio">
+        <img src="../assets/images/logoCompleto.avif" alt="Diagnosticar" class="h-9 w-auto" loading="eager" />
+        <span class="text-lg font-semibold">Diagnosticar</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="../servicios.html" class="text-primary">Servicios</a>
+        <a href="../sedes.html" class="hover:text-primary">Sedes</a>
+        <a href="../turnos.html" class="hover:text-primary">Turnos</a>
+        <a href="../resultados.html" class="hover:text-primary">Resultados</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="bg-slate-50 py-3 border-b">
+    <div class="mx-auto max-w-7xl px-4">
+      <nav class="flex items-center space-x-2 text-sm text-slate-600">
+        <a href="../index.html" class="hover:text-primary">Inicio</a>
+        <span>•</span>
+        <a href="../servicios.html" class="hover:text-primary">Servicios</a>
+        <span>•</span>
+        <span class="text-slate-900 font-medium">Pediatría</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="py-12 bg-gradient-to-br from-green-50 to-lime-50">
+    <div class="mx-auto max-w-4xl px-4 text-center">
+      <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mx-auto mb-6">
+        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1.586a1 1 0 01.707.293L12 11l.707-.707A1 1 0 0113.414 10H15M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+      </div>
+      <h1 class="text-4xl font-bold text-slate-900 mb-4">Pediatría</h1>
+      <p class="text-xl text-slate-600">
+        Cuidado integral de la salud de niños y adolescentes.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="py-12">
+    <div class="mx-auto max-w-4xl px-4">
+      
+      <!-- Servicios disponibles -->
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold mb-6">Nuestros Servicios Pediátricos</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          
+          <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+            <h3 class="text-lg font-semibold mb-3">Control de Niño Sano</h3>
+            <p class="text-slate-600 text-sm mb-4">
+              Seguimiento del crecimiento y desarrollo del niño, con foco en la prevención.
+            </p>
+            <ul class="text-sm text-slate-500 space-y-1 mb-4">
+              <li>• Evaluación de crecimiento</li>
+              <li>• Consejos de alimentación</li>
+              <li>• Detección temprana de problemas</li>
+              <li>• Cobertura PAMI/IOMA 100%</li>
+            </ul>
+          </div>
+
+          <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+            <h3 class="text-lg font-semibold mb-3">Vacunación</h3>
+            <p class="text-slate-600 text-sm mb-4">
+              Aplicación de vacunas del Calendario Nacional y opcionales para la protección contra enfermedades.
+            </p>
+            <ul class="text-sm text-slate-500 space-y-1 mb-4">
+              <li>• Calendario Nacional de Vacunación</li>
+              <li>• Vacunas opcionales</li>
+              <li>• Asesoramiento a padres</li>
+              <li>• Ambiente amigable para niños</li>
+            </ul>
+          </div>
+
+          <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+            <h3 class="text-lg font-semibold mb-3">Consulta por Enfermedad</h3>
+            <p class="text-slate-600 text-sm mb-4">
+              Atención de patologías agudas y crónicas, con diagnóstico y tratamiento adecuado.
+            </p>
+            <ul class="text-sm text-slate-500 space-y-1 mb-4">
+              <li>• Diagnóstico y tratamiento</li>
+              <li>• Seguimiento de enfermedades</li>
+              <li>• Urgencias pediátricas</li>
+              <li>• Interconsultas con especialistas</li>
+            </ul>
+          </div>
+
+          <div class="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
+            <h3 class="text-lg font-semibold mb-3">Certificados Escolares</h3>
+            <p class="text-slate-600 text-sm mb-4">
+              Realización del apto físico y certificados necesarios para el inicio escolar y actividades deportivas.
+            </p>
+            <ul class="text-sm text-slate-500 space-y-1 mb-4">
+              <li>• Apto físico escolar</li>
+              <li>• Certificados de salud</li>
+              <li>• Evaluación completa</li>
+              <li>• Firma y sello profesional</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="bg-gradient-to-r from-primary to-secondary rounded-xl p-8 text-white text-center">
+        <h2 class="text-2xl font-bold mb-4">¿Necesitas un turno de Pediatría?</h2>
+        <p class="mb-6 opacity-90">
+          Reserva una consulta para el cuidado de tus hijos de forma fácil y rápida
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="../turnos.html" class="bg-white text-primary hover:bg-gray-50 px-6 py-3 rounded-xl font-semibold transition">
+            Sacar turno online
+          </a>
+          <a href="https://wa.me/5491100000000" class="border-2 border-white text-white hover:bg-white/10 px-6 py-3 rounded-xl font-semibold transition">
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t bg-slate-50 mt-16">
+    <div class="mx-auto max-w-7xl px-4 py-8">
+      <div class="text-center">
+        <p class="text-slate-600">&copy; 2025 Diagnosticar. Todos los derechos reservados.</p>
+        <p class="text-slate-500 text-sm mt-2">
+          <a href="../index.html" class="hover:text-primary">Volver al inicio</a> | 
+          <a href="../servicios.html" class="hover:text-primary">Ver todos los servicios</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

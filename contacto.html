@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contacto — Diagnosticar Centro Médico</title>
+  <meta name="description" content="Ponte en contacto con nosotros para consultas, turnos y más información." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/avif" href="assets/images/logoCompleto.avif" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            primary: '#0F62FE',
+            secondary: '#8AB4F8',
+            success: '#12A150',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans text-slate-800 bg-white">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-100">
+    <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3" aria-label="Diagnosticar inicio">
+        <img src="assets/images/logoCompleto.avif" alt="Diagnosticar" class="h-9 w-auto" loading="eager" />
+        <span class="text-lg font-semibold">Diagnosticar</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="servicios.html" class="hover:text-primary">Servicios</a>
+        <a href="sedes.html" class="hover:text-primary">Sedes</a>
+        <a href="turnos.html" class="hover:text-primary">Turnos</a>
+        <a href="resultados.html" class="hover:text-primary">Resultados</a>
+        <a href="contacto.html" class="text-primary font-medium">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="py-12">
+    <div class="mx-auto max-w-4xl px-4">
+      <h1 class="text-4xl font-bold text-slate-900 mb-4 text-center">Contacto</h1>
+      <p class="text-xl text-slate-600 text-center mb-12">Estamos para ayudarte. Contáctanos a través de los siguientes medios.</p>
+
+      <!-- Formulario de Contacto -->
+      <div class="bg-white rounded-xl border border-slate-200 p-8 shadow-sm mb-12">
+        <h2 class="text-2xl font-bold mb-6">Envíanos un Mensaje</h2>
+        <form>
+          <div class="grid md:grid-cols-2 gap-6 mb-6">
+            <div>
+              <label for="nombre" class="block text-sm font-medium text-slate-700 mb-2">Nombre</label>
+              <input type="text" id="nombre" name="nombre" class="w-full border-slate-300 rounded-lg shadow-sm focus:border-primary focus:ring-primary" required>
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-slate-700 mb-2">Email</label>
+              <input type="email" id="email" name="email" class="w-full border-slate-300 rounded-lg shadow-sm focus:border-primary focus:ring-primary" required>
+            </div>
+          </div>
+          <div class="mb-6">
+            <label for="asunto" class="block text-sm font-medium text-slate-700 mb-2">Asunto</label>
+            <input type="text" id="asunto" name="asunto" class="w-full border-slate-300 rounded-lg shadow-sm focus:border-primary focus:ring-primary" required>
+          </div>
+          <div class="mb-6">
+            <label for="mensaje" class="block text-sm font-medium text-slate-700 mb-2">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" class="w-full border-slate-300 rounded-lg shadow-sm focus:border-primary focus:ring-primary" required></textarea>
+          </div>
+          <div>
+            <button type="submit" class="bg-primary text-white hover:bg-primary/90 px-6 py-3 rounded-xl font-semibold transition w-full">Enviar Mensaje</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Información de Contacto -->
+      <div class="bg-blue-50 rounded-xl p-8">
+        <h2 class="text-2xl font-bold text-blue-900 mb-6">Información de Contacto</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="font-semibold text-blue-900 mb-3">Teléfonos</h3>
+            <ul class="text-blue-800 text-sm space-y-2">
+              <li>Tel: <a class="text-primary" href="tel:+541100000000">+54 11 0000-0000</a></li>
+              <li>WhatsApp: <a class="text-primary" href="https://wa.me/5491100000000">+54 9 11 0000 0000</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold text-blue-900 mb-3">Email</h3>
+            <p class="text-blue-800 text-sm"><a class="text-primary" href="mailto:info@diagnosticar.org">info@diagnosticar.org</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t bg-slate-50 mt-16">
+    <div class="mx-auto max-w-7xl px-4 py-8">
+      <div class="text-center">
+        <p class="text-slate-600">&copy; 2025 Diagnosticar. Todos los derechos reservados.</p>
+        <p class="text-slate-500 text-sm mt-2">
+          <a href="index.html" class="hover:text-primary">Volver al inicio</a> | 
+          <a href="servicios.html" class="hover:text-primary">Ver todos los servicios</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

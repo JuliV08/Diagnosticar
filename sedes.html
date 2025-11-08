@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sedes — Berazategui y Lomas de Zamora | Diagnosticar</title>
+  <meta name="description" content="Conoce nuestras sedes en Berazategui y Lomas de Zamora. Direcciones, horarios de atención y cómo llegar." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/avif" href="assets/images/logoCompleto.avif" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            primary: '#0F62FE',
+            secondary: '#8AB4F8',
+            success: '#12A150',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans text-slate-800 bg-white">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-100">
+    <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3" aria-label="Diagnosticar inicio">
+        <img src="assets/images/logoCompleto.avif" alt="Diagnosticar" class="h-9 w-auto" loading="eager" />
+        <span class="text-lg font-semibold">Diagnosticar</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="servicios.html" class="hover:text-primary">Servicios</a>
+        <a href="sedes.html" class="text-primary font-medium">Sedes</a>
+        <a href="turnos.html" class="hover:text-primary">Turnos</a>
+        <a href="resultados.html" class="hover:text-primary">Resultados</a>
+        <a href="contacto.html" class="hover:text-primary">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="py-16 bg-gradient-to-br from-primary/5 to-secondary/5">
+    <div class="mx-auto max-w-7xl px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Nuestras Sedes</h1>
+      <p class="text-xl text-slate-600 max-w-3xl mx-auto">
+        Te atendemos en dos ubicaciones estratégicas en el sur del Gran Buenos Aires
+      </p>
+    </div>
+  </section>
+
+  <!-- Sedes -->
+  <section class="py-12">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="grid lg:grid-cols-2 gap-12">
+        
+        <!-- Sede Berazategui -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-lg overflow-hidden">
+          <div class="relative h-64 bg-gradient-to-br from-blue-100 to-blue-200">
+            <!-- Placeholder para imagen de la sede -->
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="text-center">
+                <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-2">
+                  <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                  </svg>
+                </div>
+                <p class="text-blue-800 font-medium">Sede Principal</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="p-8">
+            <div class="flex items-center justify-between mb-4">
+              <h2 class="text-2xl font-bold text-slate-900">Sede Berazategui</h2>
+              <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">Principal</span>
+            </div>
+            
+            <div class="space-y-4">
+              <div class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-slate-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+                <div>
+                  <p class="font-medium text-slate-900">Av. Ejemplo 1234</p>
+                  <p class="text-slate-600">Berazategui, Buenos Aires</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-slate-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <div>
+                  <p class="font-medium text-slate-900">Horarios de Atención</p>
+                  <p class="text-slate-600">Lunes a Viernes: 7:00 - 20:00</p>
+                  <p class="text-slate-600">Sábados: 8:00 - 13:00</p>
+                  <p class="text-slate-600">Domingos: Guardia 16:00 - 20:00</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-slate-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                </svg>
+                <div>
+                  <p class="font-medium text-slate-900">Teléfono</p>
+                  <p class="text-primary font-medium">(011) 4000-0001</p>
+                </div>
+              </div>
+
+              <div class="pt-4 border-t border-slate-100">
+                <h3 class="font-semibold text-slate-900 mb-2">Servicios Disponibles</h3>
+                <div class="flex flex-wrap gap-2">
+                  <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Resonancia Magnética</span>
+                  <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Ecografía</span>
+                  <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Cardiología</span>
+                  <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm">Ginecología</span>
+                  <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">Traumatología</span>
+                  <span class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm">Mamografía</span>
+                </div>
+              </div>
+
+              <div class="pt-4 flex gap-3">
+                <a href="#" class="flex-1 bg-primary text-white text-center py-3 px-4 rounded-xl font-semibold hover:bg-primary/90 transition">
+                  Cómo llegar
+                </a>
+                <a href="turnos.html" class="flex-1 border border-primary text-primary text-center py-3 px-4 rounded-xl font-semibold hover:bg-primary/5 transition">
+                  Sacar turno
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sede Lomas de Zamora -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-lg overflow-hidden">
+          <div class="relative h-64 bg-gradient-to-br from-green-100 to-green-200">
+            <!-- Placeholder para imagen de la sede -->
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="text-center">
+                <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-2">
+                  <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                  </svg>
+                </div>
+                <p class="text-green-800 font-medium">Sucursal</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="p-8">
+            <div class="flex items-center justify-between mb-4">
+              <h2 class="text-2xl font-bold text-slate-900">Sede Lomas de Zamora</h2>
+              <span class="bg-success/10 text-success px-3 py-1 rounded-full text-sm font-medium">Sucursal</span>
+            </div>
+            
+            <div class="space-y-4">
+              <div class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-slate-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+                <div>
+                  <p class="font-medium text-slate-900">Calle Falsa 567</p>
+                  <p class="text-slate-600">Lomas de Zamora, Buenos Aires</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-slate-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <div>
+                  <p class="font-medium text-slate-900">Horarios de Atención</p>
+                  <p class="text-slate-600">Lunes a Viernes: 7:00 - 20:00</p>
+                  <p class="text-slate-600">Sábados: 8:00 - 13:00</p>
+                  <p class="text-slate-600 text-sm">(Consultar guardia dominical)</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-slate-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                </svg>
+                <div>
+                  <p class="font-medium text-slate-900">Teléfono</p>
+                  <p class="text-primary font-medium">(011) 4000-0002</p>
+                </div>
+              </div>
+
+              <div class="pt-4 border-t border-slate-100">
+                <h3 class="font-semibold text-slate-900 mb-2">Servicios Disponibles</h3>
+                <div class="flex flex-wrap gap-2">
+                  <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Ecografía</span>
+                  <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Cardiología</span>
+                  <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm">Ginecología</span>
+                  <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">Traumatología</span>
+                  <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Pediatría</span>
+                  <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Apto Físico</span>
+                </div>
+              </div>
+
+              <div class="pt-4 flex gap-3">
+                <a href="#" class="flex-1 bg-primary text-white text-center py-3 px-4 rounded-xl font-semibold hover:bg-primary/90 transition">
+                  Cómo llegar
+                </a>
+                <a href="turnos.html" class="flex-1 border border-primary text-primary text-center py-3 px-4 rounded-xl font-semibold hover:bg-primary/5 transition">
+                  Sacar turno
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Información adicional -->
+      <div class="mt-16 grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Turnos Online</h3>
+          <p class="text-slate-600 text-sm">Reserva tu turno 24/7 desde cualquier dispositivo. Confirmación inmediata.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-12 h-12 bg-success/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">PAMI e IOMA</h3>
+          <p class="text-slate-600 text-sm">Cobertura 100% sin copagos para afiliados PAMI e IOMA en estudios habilitados.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Guardia Médica</h3>
+          <p class="text-slate-600 text-sm">Atención de urgencias con profesionales disponibles en horarios extendidos.</p>
+        </div>
+      </div>
+
+      <!-- Mapa o direcciones -->
+      <div class="mt-16 bg-slate-50 rounded-2xl p-8">
+        <h2 class="text-2xl font-bold text-center mb-8">¿Cómo llegar a nuestras sedes?</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-white rounded-xl p-6">
+            <h3 class="text-xl font-semibold mb-4 text-blue-900">Berazategui</h3>
+            <div class="space-y-3 text-sm">
+              <div>
+                <p class="font-medium text-slate-900">En Auto:</p>
+                <p class="text-slate-600">Por Av. Calchaquí hasta Av. Ejemplo. A 5 cuadras de la estación.</p>
+              </div>
+              <div>
+                <p class="font-medium text-slate-900">En Transporte Público:</p>
+                <p class="text-slate-600">Tren Roca hasta Berazategui + Colectivo 148, 506</p>
+              </div>
+              <div>
+                <p class="font-medium text-slate-900">Estacionamiento:</p>
+                <p class="text-slate-600">Disponible frente al centro médico</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl p-6">
+            <h3 class="text-xl font-semibold mb-4 text-green-900">Lomas de Zamora</h3>
+            <div class="space-y-3 text-sm">
+              <div>
+                <p class="font-medium text-slate-900">En Auto:</p>
+                <p class="text-slate-600">Por Av. Hipólito Yrigoyen hasta Calle Falsa. Frente a la plaza principal.</p>
+              </div>
+              <div>
+                <p class="font-medium text-slate-900">En Transporte Público:</p>
+                <p class="text-slate-600">Tren Roca hasta Lomas + Colectivo 244, 300</p>
+              </div>
+              <div>
+                <p class="font-medium text-slate-900">Estacionamiento:</p>
+                <p class="text-slate-600">Estacionamiento medido en la zona</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 text-center">
+          <p class="text-slate-600 mb-4">¿Necesitas ayuda para llegar?</p>
+          <a href="https://wa.me/5491100000000" class="inline-flex items-center gap-2 bg-success text-white px-6 py-3 rounded-xl font-semibold hover:bg-success/90 transition">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.736"/>
+            </svg>
+            Consultar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t bg-slate-50 mt-16">
+    <div class="mx-auto max-w-7xl px-4 py-10 grid md:grid-cols-4 gap-8">
+      <div>
+        <img src="assets/images/logoCompleto.avif" alt="Diagnosticar" class="h-9 w-auto mb-3" loading="lazy" />
+        <p class="text-sm text-slate-600">Centro médico integral con dos sedes en el sur del Gran Buenos Aires.</p>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-3">Sede Berazategui</h3>
+        <ul class="space-y-2 text-sm text-slate-600">
+          <li>Av. Ejemplo 1234</li>
+          <li>Tel: (011) 4000-0001</li>
+          <li>Lun-Vie: 7:00-20:00</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-3">Sede Lomas</h3>
+        <ul class="space-y-2 text-sm text-slate-600">
+          <li>Calle Falsa 567</li>
+          <li>Tel: (011) 4000-0002</li>
+          <li>Lun-Vie: 7:00-20:00</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-3">Accesos</h3>
+        <ul class="space-y-2 text-sm text-slate-600">
+          <li><a class="hover:text-primary" href="turnos.html">Turnos</a></li>
+          <li><a class="hover:text-primary" href="resultados.html">Resultados</a></li>
+          <li><a class="hover:text-primary" href="servicios.html">Servicios</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t">
+      <div class="mx-auto max-w-7xl px-4 py-6 text-xs text-slate-500 text-center">
+        <p>&copy; 2025 Diagnosticar. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

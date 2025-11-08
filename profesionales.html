@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Diagnosticar — Nuestros Profesionales</title>
+  <meta name="description" content="Conocé a los profesionales de Diagnosticar: especialidades, formación y enfoque de atención." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/avif" href="assets/images/logoCompleto.avif" />
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            primary: '#0F62FE',
+            secondary: '#8AB4F8',
+            success: '#12A150',
+          },
+          boxShadow: { soft: '0 2px 10px rgba(0,0,0,.06)' }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Ocultar scrollbar del carrusel en navegadores comunes */
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body class="font-sans text-slate-800 bg-white">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-100">
+    <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3" aria-label="Diagnosticar inicio">
+        <img src="assets/images/logoCompleto.avif" alt="Diagnosticar" class="h-9 w-auto" loading="eager" />
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="servicios.html" class="hover:text-primary">Servicios</a>
+        <a href="sedes.html" class="hover:text-primary">Sedes</a>
+        <a href="faqs.html" class="hover:text-primary">FAQ's</a>
+        <a href="turnos.html" class="hover:text-primary">Turnos</a>
+        <a href="resultados.html" class="hover:text-primary">Resultados</a>
+        <a href="contacto.html" class="hover:text-primary">Contacto</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="portal-paciente/whatsapp.html" class="hidden sm:inline-flex items-center justify-center rounded-xl border border-primary text-primary hover:bg-primary/5 px-4 py-2 text-sm font-medium">WhatsApp ahora</a>
+        <a href="turnos.html" class="inline-flex items-center justify-center rounded-xl bg-primary text-white hover:bg-primary/90 px-4 py-2 text-sm font-semibold">Sacar turno</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Encabezado -->
+  <section class="border-b bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 py-8">
+      <nav aria-label="Breadcrumb" class="text-sm text-slate-600">
+        <a href="index.html" class="hover:text-primary">Inicio</a>
+        <span class="mx-2 text-slate-400">/</span>
+        <span class="text-slate-800 font-medium">Profesionales</span>
+      </nav>
+      <h1 class="mt-3 text-3xl md:text-4xl font-semibold tracking-tight">Nuestros profesionales</h1>
+      <p class="mt-2 text-slate-600">Conocé al equipo del centro médico. Abrí el CV de cada profesional para ver más información.</p>
+    </div>
+  </section>
+
+  <!-- Buscador + Carrusel -->
+  <section class="py-12">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
+        <div>
+          <h2 class="text-xl font-semibold text-slate-900">Equipo médico</h2>
+          <p class="text-sm text-slate-600">Buscá por nombre, apellido o especialidad.</p>
+        </div>
+        <div class="w-full md:w-96">
+          <label for="buscador-prof" class="sr-only">Buscar profesionales</label>
+          <input id="buscador-prof" type="search"
+                 placeholder="Buscar por nombre, apellido o especialidad…"
+                 class="w-full rounded-xl border border-gray-300 px-4 py-2 shadow-sm focus:outline-none focus:ring-2 focus:ring-primary/40">
+        </div>
+      </div>
+
+      <!-- Carrusel -->
+      <div class="relative mt-8">
+        <!-- Gradientes laterales para fade -->
+        <div class="pointer-events-none absolute inset-y-0 left-0 w-10 bg-gradient-to-r from-white to-transparent"></div>
+        <div class="pointer-events-none absolute inset-y-0 right-0 w-10 bg-gradient-to-l from-white to-transparent"></div>
+
+        <!-- Botones flecha -->
+        <button id="btn-prev" class="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 h-10 w-10 rounded-full bg-white border border-slate-200 shadow-soft hover:shadow focus:outline-none focus:ring-2 focus:ring-primary/40 items-center justify-center" aria-label="Anterior">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-700" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.707 15.707a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 111.414 1.414L8.414 10l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd"/></svg>
+        </button>
+        <button id="btn-next" class="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10 h-10 w-10 rounded-full bg-white border border-slate-200 shadow-soft hover:shadow focus:outline-none focus:ring-2 focus:ring-primary/40 items-center justify-center" aria-label="Siguiente">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-700" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 4.293a1 1 0 011.414 0l5 5a1 1 0 010 1.414l-5 5A1 1 0 017.293 14.293L11.586 10 7.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+        </button>
+
+        <!-- Pista del carrusel -->
+        <div id="carousel" class="no-scrollbar overflow-x-auto scroll-smooth snap-x snap-mandatory">
+          <div id="track" class="flex gap-5 pr-2">
+            <!-- JS inyecta las cards acá -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal CV -->
+  <div id="modal-cv" class="fixed inset-0 z-50 hidden">
+    <div class="absolute inset-0 bg-black/40" data-close-modal></div>
+    <div class="relative z-10 mx-auto max-w-2xl mt-10 sm:mt-24 px-4">
+      <div class="rounded-2xl bg-white shadow-xl overflow-hidden">
+        <div class="p-5 border-b border-gray-200 flex items-start gap-4">
+          <div id="modal-avatar" class="h-16 w-16 rounded-full bg-slate-200 grid place-items-center text-slate-700 ring-2 ring-white/80 shadow"></div>
+          <div class="min-w-0">
+            <h3 id="modal-nombre" class="text-xl font-semibold text-slate-900 truncate">Nombre Apellido</h3>
+            <p id="modal-esp" class="text-sm text-slate-600"></p>
+          </div>
+          <button id="modal-close" class="ml-auto rounded-lg px-3 py-1.5 text-sm text-slate-600 hover:bg-slate-100">Cerrar</button>
+        </div>
+        <div class="p-5">
+          <h4 class="text-sm font-semibold text-slate-900">Currículum</h4>
+          <p id="modal-cv-text" class="mt-2 text-sm leading-6 text-slate-700 whitespace-pre-line"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="border-t bg-white py-10 text-sm text-gray-600 text-center">
+    <p>© <span id="y"></span> Diagnosticar. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Lógica de la página -->
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    const LOREM = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. ";
+    // Amplié la lista para que el carrusel tenga contenido suficiente
+    const PROFESIONALES = [
+      { id: 1,  nombre: "María",   apellido: "Gutiérrez", especialidad: "Cardiología",               descripcionPersonal: "Enfoque humano y preventivo, basado en evidencia clínica.", curriculum: (LOREM).repeat(3), fotoUrl: "" },
+      { id: 2,  nombre: "Julián",  apellido: "Sánchez",   especialidad: "Clínica Médica",            descripcionPersonal: "Clínico curioso: escuchar, explicar y acompañar.",         curriculum: (LOREM).repeat(2), fotoUrl: "" },
+      { id: 3,  nombre: "Camila",  apellido: "Páez",      especialidad: "Dermatología",              descripcionPersonal: "Tratamientos simples y efectivos, cuidado a largo plazo.",   curriculum: (LOREM).repeat(4), fotoUrl: "" },
+      { id: 4,  nombre: "Andrés",  apellido: "López",     especialidad: "Diagnóstico por Imágenes",  descripcionPersonal: "Precisión diagnóstica para mejores decisiones terapéuticas.", curriculum: (LOREM).repeat(2), fotoUrl: "" },
+      { id: 5,  nombre: "Sofía",   apellido: "Martínez",  especialidad: "Pediatría",                 descripcionPersonal: "Comunicación clara con familias y niños.",                   curriculum: (LOREM).repeat(3), fotoUrl: "" },
+      { id: 6,  nombre: "Tomás",   apellido: "Fernández", especialidad: "Traumatología",             descripcionPersonal: "Rehabilitación funcional y retorno seguro a la actividad.", curriculum: (LOREM).repeat(2), fotoUrl: "" },
+      { id: 7,  nombre: "Lucía",   apellido: "Alonso",    especialidad: "Ginecología",               descripcionPersonal: "Acompañamiento integral en cada etapa.",                    curriculum: (LOREM).repeat(3), fotoUrl: "" },
+      { id: 8,  nombre: "Diego",   apellido: "Rossi",     especialidad: "Neurología",                descripcionPersonal: "Diagnóstico minucioso, empatía y contención.",               curriculum: (LOREM).repeat(2), fotoUrl: "" },
+      { id: 9,  nombre: "Paula",   apellido: "Vega",      especialidad: "Cardiología",               descripcionPersonal: "Prevención cardiovascular y hábitos saludables.",            curriculum: (LOREM).repeat(3), fotoUrl: "" },
+      { id: 10, nombre: "Matías",  apellido: "Ibarra",    especialidad: "Clínica Médica",            descripcionPersonal: "Trabajo en equipo y educación del paciente.",               curriculum: (LOREM).repeat(2), fotoUrl: "" },
+      { id: 11, nombre: "Brenda",  apellido: "Suárez",    especialidad: "Nutrición",                 descripcionPersonal: "Planificación realista, sostenible y personalizada.",        curriculum: (LOREM).repeat(3), fotoUrl: "" },
+      { id: 12, nombre: "Nicolás", apellido: "Prieto",    especialidad: "Urología",                  descripcionPersonal: "Confidencialidad, respeto y claridad en el proceso.",        curriculum: (LOREM).repeat(2), fotoUrl: "" },
+    ];
+
+    const buscador = document.getElementById('buscador-prof');
+    const carousel = document.getElementById('carousel');
+    const track = document.getElementById('track');
+    const btnPrev = document.getElementById('btn-prev');
+    const btnNext = document.getElementById('btn-next');
+
+    function avatarHTML(p) {
+      if (p.fotoUrl) {
+        return `<img src="${p.fotoUrl}" alt="${p.nombre} ${p.apellido}" class="h-16 w-16 rounded-full object-cover ring-2 ring-white/80 shadow" loading="lazy">`;
+      }
+      const ini = `${(p.nombre||'')[0]||''}${(p.apellido||'')[0]||''}`.toUpperCase();
+      return `<div class="h-16 w-16 rounded-full bg-slate-200 text-slate-700 grid place-items-center ring-2 ring-white/80 shadow">
+                <span class="font-semibold">${ini || '?'}</span>
+              </div>`;
+    }
+
+    function cardHTML(p) {
+      return `
+        <article class="group snap-start min-w-[280px] sm:min-w-[320px] max-w-sm relative overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-transform duration-200 ease-out hover:-translate-y-1 hover:shadow-lg">
+          <div class="p-5 flex items-start gap-4">
+            ${avatarHTML(p)}
+            <div class="min-w-0 flex-1">
+              <h3 class="text-slate-900 text-lg font-semibold truncate">${p.nombre} ${p.apellido}</h3>
+              ${p.especialidad ? `<p class="text-sm text-slate-600">${p.especialidad}</p>` : ''}
+              <p class="mt-2 text-sm text-slate-700 line-clamp-3">${p.descripcionPersonal || ''}</p>
+            </div>
+          </div>
+          <div class="px-5 pb-5 pt-0 flex items-center justify-between">
+            <button class="text-sm font-medium rounded-xl px-3 py-2 bg-primary text-white hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary/40"
+                    data-ver-cv="${p.id}">
+              Ver CV
+            </button>
+            <span class="text-xs text-slate-500">ID #${p.id}</span>
+          </div>
+          <div class="pointer-events-none absolute inset-x-0 -bottom-16 h-24 bg-gradient-to-t from-slate-50 to-transparent opacity-0 group-hover:opacity-100 transition"></div>
+        </article>
+      `;
+    }
+
+    let listaActual = [...PROFESIONALES];
+
+    function render(list) {
+      // Re-generar cards en la pista del carrusel
+      track.innerHTML = list.map(cardHTML).join('');
+      // Mostrar/ocultar flechas según cantidad
+      const overflow = track.scrollWidth > carousel.clientWidth + 10;
+      btnPrev.classList.toggle('hidden', !overflow);
+      btnNext.classList.toggle('hidden', !overflow);
+    }
+
+    function filtrar(term) {
+      if (!term.trim()) return [...PROFESIONALES];
+      const t = term.toLowerCase();
+      return PROFESIONALES.filter(p =>
+        [p.nombre, p.apellido, p.especialidad].filter(Boolean)
+         .some(v => (v||'').toLowerCase().includes(t))
+      );
+    }
+
+    // Modal
+    const modal = document.getElementById('modal-cv');
+    const modalClose = document.getElementById('modal-close');
+    const modalAvatar = document.getElementById('modal-avatar');
+    const modalNombre = document.getElementById('modal-nombre');
+    const modalEsp = document.getElementById('modal-esp');
+    const modalCvText = document.getElementById('modal-cv-text');
+
+    function abrirModal(p) {
+      modalAvatar.innerHTML = avatarHTML(p);
+      modalNombre.textContent = `${p.nombre} ${p.apellido}`;
+      modalEsp.textContent = p.especialidad || '';
+      modalCvText.textContent = p.curriculum || LOREM;
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function cerrarModal() {
+      modal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    // Eventos búsqueda
+    buscador.addEventListener('input', (e) => {
+      listaActual = filtrar(e.target.value);
+      render(listaActual);
+      
+    });
+
+
+    // Evento click en carrusel (delegado para botones Ver CV)
+    track.addEventListener('click', (e) => {
+      const btn = e.target.closest('[data-ver-cv]');
+      if (!btn) return;
+      const id = Number(btn.getAttribute('data-ver-cv'));
+      const p = listaActual.find(x => x.id === id);
+      if (p) abrirModal(p);
+    });
+
+    // Eventos Modal
+    modal.addEventListener('click', (e) => {
+      if (e.target.hasAttribute('data-close-modal')) cerrarModal();
+    });
+    modalClose.addEventListener('click', cerrarModal);
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !modal.classList.contains('hidden')) cerrarModal(); });
+
+    // Navegación del carrusel
+    function scrollAmount() {
+      // Desplaza casi un viewport del carrusel
+      return Math.max(320, Math.floor(carousel.clientWidth * 0.9));
+    }
+    btnPrev.addEventListener('click', () => {
+      carousel.scrollBy({ left: -scrollAmount(), behavior: 'smooth' });
+    });
+    btnNext.addEventListener('click', () => {
+      carousel.scrollBy({ left: scrollAmount(), behavior: 'smooth' });
+    });
+
+    // Render inicial
+    render(listaActual);
+
+    // Recalcular flechas al redimensionar
+    window.addEventListener('resize', () => render(listaActual));
+  </script>
+  <!-- AUTOPLAY  -->
+<script>
+(() => {
+  const AUTOPLAY_MS = 3500;
+  const PAUSE_AFTER_INTERACTION_MS = 8000;
+
+  let autoplayId = null;
+  let userPausedUntil = 0;
+
+  // Busca elementos y espera a que haya tarjetas renderizadas
+  function waitForReady(maxMs = 5000) {
+    const start = Date.now();
+    return new Promise((resolve, reject) => {
+      (function check() {
+        const carousel = document.getElementById('carousel');
+        const track    = document.getElementById('track');
+        const btnPrev  = document.getElementById('btn-prev');
+        const btnNext  = document.getElementById('btn-next');
+
+        if (carousel && track && track.children.length > 0 && btnPrev && btnNext) {
+          return resolve({ carousel, track, btnPrev, btnNext });
+        }
+        if (Date.now() - start > maxMs) return reject(new Error('Carrusel no listo'));
+        requestAnimationFrame(check);
+      })();
+    });
+  }
+
+  function atEnd(carousel) {
+    return (carousel.scrollLeft + carousel.clientWidth) >= (carousel.scrollWidth - 2);
+  }
+
+  function scrollAmount(carousel) {
+    return Math.max(320, Math.floor(carousel.clientWidth * 0.9));
+  }
+
+  function doStep(carousel) {
+    if (Date.now() < userPausedUntil) return;
+    if (atEnd(carousel)) {
+      carousel.scrollTo({ left: 0, behavior: 'smooth' });
+    } else {
+      carousel.scrollBy({ left: scrollAmount(carousel), behavior: 'smooth' });
+    }
+  }
+
+  function startAutoplay(carousel) {
+    if (!autoplayId) autoplayId = setInterval(() => doStep(carousel), AUTOPLAY_MS);
+  }
+  function stopAutoplay() { if (autoplayId) { clearInterval(autoplayId); autoplayId = null; } }
+  function pauseFor(ms) { userPausedUntil = Date.now() + ms; }
+
+  waitForReady().then(({ carousel, track, btnPrev, btnNext }) => {
+    // Inicia
+    startAutoplay(carousel);
+
+    // Pausas por interacción
+    carousel.addEventListener('mouseenter', stopAutoplay);
+    carousel.addEventListener('mouseleave', () => startAutoplay(carousel));
+    carousel.addEventListener('focusin',  stopAutoplay);
+    carousel.addEventListener('focusout', () => startAutoplay(carousel));
+
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) stopAutoplay(); else startAutoplay(carousel);
+    });
+
+    // Flechas y buscador
+    const buscador = document.getElementById('buscador-prof');
+    btnPrev.addEventListener('click', () => { pauseFor(PAUSE_AFTER_INTERACTION_MS); doStep(carousel); });
+    btnNext.addEventListener('click', () => { pauseFor(PAUSE_AFTER_INTERACTION_MS); doStep(carousel); });
+    if (buscador) buscador.addEventListener('input', () => pauseFor(PAUSE_AFTER_INTERACTION_MS));
+
+    // Hookear modal si existen funciones globales
+    if (typeof window.abrirModal === 'function') {
+      const __abrir = window.abrirModal;
+      window.abrirModal = function(...args){ stopAutoplay(); return __abrir.apply(this, args); };
+    }
+    if (typeof window.cerrarModal === 'function') {
+      const __cerrar = window.cerrarModal;
+      window.cerrarModal = function(...args){ const r = __cerrar.apply(this, args); pauseFor(PAUSE_AFTER_INTERACTION_MS); startAutoplay(carousel); return r; };
+    }
+
+    // Recalcular al redimensionar
+    window.addEventListener('resize', () => {
+
+    });
+  }).catch(() => {
+  });
+})();
+</script>
+
+</script>
+
+</body>
+</html>
